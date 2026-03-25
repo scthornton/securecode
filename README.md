@@ -100,3 +100,17 @@ This generates `unified-data/data/web/` (1,435 files) and `unified-data/data/aim
 - **Web examples:** CC BY-NC-SA 4.0
 - **AI/ML examples:** MIT
 - **Unified dataset:** CC BY-NC-SA 4.0 (the more restrictive of the two)
+
+---
+
+## Contact
+
+**Scott Thornton** — AI Security Researcher
+
+- Website: [perfecxion.ai](https://perfecxion.ai/)
+- Email: [scott@perfecxion.ai](mailto:scott@perfecxion.ai)
+- LinkedIn: [linkedin.com/in/scthornton](https://www.linkedin.com/in/scthornton)
+- ORCID: [0009-0008-0491-0032](https://orcid.org/0009-0008-0491-0032)
+- GitHub: [@scthornton](https://github.com/scthornton)
+
+**Security Issues**: Please report via [SECURITY.md](SECURITY.md)
