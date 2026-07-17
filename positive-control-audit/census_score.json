@@ -1,0 +1,4661 @@
+{
+  "summary": {
+    "universe": 661,
+    "denominator": {
+      "executable_subset (sound harness ran)": 446,
+      "non_executable_remainder": 215,
+      "breakdown": {
+        "FIRES_SOUND": 442,
+        "NO_FIRE_SOUND": 0,
+        "NO_FIRE_CAP_UNVERIFIED": 0,
+        "FIRES_UNSOUND": 4,
+        "HARNESS_ERROR_or_NOT_RUN": 10,
+        "runtime_NON_EXECUTABLE": 32,
+        "generator_non_executable": 173,
+        "missing_meta": 0
+      }
+    },
+    "headline_numbers": {
+      "fire_rate_recall": 1.0,
+      "fire_rate_95ci": [
+        0.9914,
+        1.0
+      ],
+      "fire_rate_fraction": "442/442",
+      "negative_control_pass_rate": 0.9955,
+      "negative_control_fraction": "444/446",
+      "harness_false_negative_rate": 0.009,
+      "harness_fn_fraction": "4/446"
+    },
+    "defect_candidates": []
+  },
+  "rows": [
+    {
+      "id": "llm01-anthropic-calendar-content-injection-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-anthropic-claude-computer-use-screen-injection",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm01-anthropic-claude-vision-image-text-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-anthropic-claude-xml-entity-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm01-anthropic-mcp-tool-description-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm01-anthropic-multi-turn-jailbreak-crescendo",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-anthropic-role-play-jailbreak-via-persona",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-anthropic-tool-use-result-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm01-anthropic-xml-tag-injection-system-prompt",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm01-autonomous-vehicle-ai-via-traffic-sign-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm01-aws-bedrock-knowledge-base-document-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm01-chatgpt-plugin-oauth-callback-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm01-chromadb-rag-injection-via-uploaded-docs",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-confluence-wiki-page-indirect-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-context-window-manipulation-priority-override",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-crewai-agent-injection-via-task-description",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm01-delimiter-confusion-system-message-escape",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm01-dify-chatflow-variable-injection",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm01-dify-external-knowledge-api-injection",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm01-direct-injection-via-user-input-chatbot",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm01-encoding-bypass-base64-unicode-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm01-fastapi-delimiter-confusion-injection-attack",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm01-fastapi-multimodal-audio-injection-whisper",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm01-few-shot-poisoning-in-example-database",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-flask-indirect-injection-via-web-scraping",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-google-sheets-ai-formula-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-google-vertex-ai-gemini-multimodal-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm01-healthcare-ehr-ai-injection-via-patient-notes",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-indirect-injection-via-rag-documents",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-injection-via-code-comments-docstrings",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm01-injection-via-email-calendar-content",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-injection-via-function-calling-parameters",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm01-injection-via-structured-json-xml-template",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm01-langchain-context-window-manipulation-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-langchain-csv-agent-code-injection",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm01-langchain-csv-agent-injection-via-cell-content",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm01-langchain-few-shot-injection-via-examples",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-langchain-multimodal-injection-via-image",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm01-langchain-output-parser-injection-chain",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-langchain-recursive-injection-chain-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm01-langchain-structured-output-json-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm01-language-bypass-non-english-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-llamaindex-agent-tool-injection-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm01-llamaindex-chat-engine-context-window-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm01-llamaindex-data-agent-csv-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm01-llamaindex-query-injection-via-metadata-filters",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm01-multimodal-image-steganographic-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm01-notion-ai-document-injection-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-openai-assistants-file-search-indirect-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-openai-assistants-file-search-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm01-openai-assistants-thread-injection-via-files",
+      "decision": "harness",
+      "verdict": "NOT_RUN",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm01-openai-code-comment-docstring-injection",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm01-openai-custom-gpt-action-response-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm01-openai-encoding-bypass-base64-unicode",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm01-openai-function-calling-parameter-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm01-openai-gpt4-turbo-json-mode-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-openai-language-bypass-non-english-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-openai-realtime-api-audio-injection",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm01-openai-structured-output-schema-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm01-openai-vision-ocr-injection-attack",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm01-openai-whisper-transcription-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm01-pdf-resume-injection-in-hr-screening",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-prompt-injection-in-anthropic-tool-use",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm01-qdrant-email-content-indirect-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-rag-injection-via-llamaindex-pinecone",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-recursive-injection-in-multi-step-agent",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm01-role-play-jailbreak-framing-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm01-slack-bot-indirect-injection-via-channel-messages",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm02-anthropic-batch-api-response-data-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm02-anthropic-context-caching-data-leakage",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm02-anthropic-context-window-overflow-data-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm02-anthropic-message-batches-data-mixing",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm02-anthropic-tool-result-sensitive-data-exposure",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm02-anthropic-tool-use-error-data-leakage",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm02-aws-bedrock-guardrails-bypass-data-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm02-azure-openai-content-filter-bypass-data-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm02-biometric-data-exposure-via-ai-app",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm02-chromadb-collection-metadata-leak",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm02-chromadb-embedding-vector-reconstruction",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm02-context-window-overflow-sensitive-data-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm02-conversation-history-poisoning-data-theft",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm02-crewai-inter-agent-memory-leakage",
+      "decision": "harness",
+      "verdict": "FIRES_UNSOUND",
+      "neg_ok": true,
+      "fire_signal": "filters"
+    },
+    {
+      "id": "llm02-cross-session-conversation-leakage",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm02-differential-privacy-bypass-in-finetuning",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm02-django-model-inversion-user-profile-extraction",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "filters"
+    },
+    {
+      "id": "llm02-django-pii-leakage-in-llm-chat-logs",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm02-embedding-inversion-document-reconstruction",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm02-fastapi-llm-response-caching-data-leak",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm02-fastapi-side-channel-information-leakage",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm02-federated-learning-gradient-inversion",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm02-gradient-leakage-in-collaborative-training",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm02-gradio-file-upload-training-data-exposure",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm02-groq-api-response-caching-data-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm02-healthcare-patient-data-leakage-via-ai-summarizer",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm02-langchain-conversation-memory-pii-extraction",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm02-langchain-embedding-inversion-text-recovery",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm02-langchain-federated-learning-data-extraction",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm02-langchain-redis-memory-cross-session-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm02-langchain-tool-output-credential-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm02-langchain-vectorstore-metadata-pii-exposure",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm02-litellm-proxy-api-key-logging-exposure",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm02-llamaindex-chat-memory-context-bleed",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm02-llamaindex-cross-session-data-leakage-memory",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm02-llamaindex-gradient-leakage-via-embedding-api",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm02-membership-inference-on-finetuned-model",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm02-milvus-api-unauthorized-collection-access",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm02-mistral-api-batch-response-cross-contamination",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm02-mistral-fine-tuning-memorization-extraction",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm02-model-inversion-reconstructing-training-faces",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm02-ollama-api-conversation-history-exposure",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm02-openai-assistants-file-search-data-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm02-openai-assistants-thread-data-crosscontamination",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm02-openai-embedding-api-input-reflection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm02-openai-fine-tuning-data-extraction-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm02-openai-fine-tuning-training-data-memorization",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm02-openai-function-calling-argument-exfiltration",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm02-openai-function-result-pii-leakage",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "filters"
+    },
+    {
+      "id": "llm02-openai-structured-outputs-pii-in-schema",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm02-openai-training-data-extraction-via-prompt",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm02-openai-whisper-audio-transcription-pii-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm02-persistent-memory-injection-in-chatbot",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm02-pii-extraction-from-finetuned-model",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm02-pii-leakage-in-langchain-memory",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm02-pinecone-assistant-conversation-history-exposure",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm02-pinecone-metadata-pii-exposure",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "filters"
+    },
+    {
+      "id": "llm02-pinecone-serverless-api-key-scope-overprivilege",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm02-qdrant-snapshot-unauthorized-data-access",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm02-rag-document-metadata-pii-leakage",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm02-side-channel-timing-attack-on-llm-api",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm02-streamlit-chat-session-state-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm02-streamlit-session-state-ai-data-persistence",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm02-training-data-extraction-anthropic-api",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm02-training-data-extraction-via-prompt-probing",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm02-weaviate-graphql-data-exfiltration",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm02-weaviate-graphql-query-data-extraction",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "filters"
+    },
+    {
+      "id": "llm03-anthropic-claude-model-card-spoofing",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-anthropic-model-checkpoint-tampering",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-anthropic-sdk-typosquatting-attack",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm03-aws-sagemaker-model-artifact-tampering",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm03-bentoml-model-serving-pickle-rce",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-bentoml-model-store-deserialization-rce",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-cerebras-model-loading-untrusted-weights",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-chainlit-app-dependency-chain-attack",
+      "decision": "harness",
+      "verdict": "NOT_RUN",
+      "neg_ok": null,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm03-chromadb-persistent-client-path-traversal",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm03-cicd-pipeline-poisoning-for-ml",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm03-compromised-pretrained-model-backdoor",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-compromised-tokenizer-rce",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm03-cuda-driver-vulnerability-exploitation-ml",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm03-dataset-poisoning-via-public-repos",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-dify-marketplace-plugin-rce",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-docker-ml-image-supply-chain-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-dvc-pipeline-data-injection-attack",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-fastapi-ml-dependency-confusion-attack",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm03-gguf-model-format-metadata-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-gradio-app-dependency-hijacking",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-huggingface-pickle-deserialization-rce",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm03-huggingface-transformers-auto-model-rce",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-huggingface-typosquatting-model-download",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm03-jupyter-notebook-supply-chain-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-langchain-community-document-loader-ssrf",
+      "decision": "harness",
+      "verdict": "FIRES_UNSOUND",
+      "neg_ok": false,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-langchain-community-loader-arbitrary-code",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm03-langchain-community-tool-supply-chain-attack",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm03-langchain-experimental-module-rce",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-langchain-hub-prompt-supply-chain-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-langchain-text-splitter-regex-redos",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm03-malicious-model-weights-pickle-deserialization",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-mcp-server-malicious-tool-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-mlflow-model-serving-deserialization-rce",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-mlflow-plugin-remote-code-execution",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-modal-custom-image-dependency-injection",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm03-model-card-metadata-manipulation",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm03-ollama-library-model-tampering",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm03-ollama-model-file-import-arbitrary-path",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-ollama-modelfile-command-injection",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm03-onnx-model-format-code-execution",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm03-onnx-model-format-custom-operator-rce",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm03-openai-assistants-function-definition-tampering",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm03-openai-custom-gpt-action-ssrf",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-openai-custom-gpt-action-supply-chain",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm03-openai-plugin-oauth-token-theft",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-pinecone-api-key-hardcoded-in-rag-app",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm03-pip-dependency-confusion-ml-pipeline",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm03-pip-package-typosquatting-ml-libraries",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm03-pytorch-model-loading-code-execution",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-pytorch-pickle-deserialization-rce",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-replicate-cog-model-container-escape",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm03-safetensors-auxiliary-file-bypass",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-safetensors-header-overflow-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm03-safetensors-vs-pickle-model-loading-security",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm03-streamlit-community-component-xss-rce",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm03-together-ai-model-registry-tampering",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm03-triton-inference-server-model-repository-rce",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm03-vllm-custom-model-loader-arbitrary-code",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm03-vllm-model-loader-arbitrary-code-execution",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm03-weights-and-biases-artifact-poisoning",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-anthropic-clean-label-poisoning-constitutional-ai",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-anthropic-constitutional-ai-principle-poisoning",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-anthropic-constitutional-ai-reward-hacking",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-anthropic-fine-tuning-data-poisoning-attack",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-anthropic-rlhf-reward-manipulation",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-anthropic-trojan-model-via-adapter-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-aws-bedrock-custom-model-training-data-swap",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-backdoor-trigger-insertion-in-instruction-tuning",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-benchmark-contamination-false-performance",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-benchmark-contamination-via-test-set-leakage",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-chromadb-clean-label-poisoning-rag-system",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-clean-label-poisoning-sentiment-analysis",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-cohere-embed-fine-tuning-label-flipping",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-cohere-embed-training-data-poisoning",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-crowdsourced-annotation-poisoning-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-curriculum-learning-ordering-manipulation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm04-data-augmentation-poisoning-synthetic-data",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-deepseek-distillation-backdoor-persistence",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-deepseek-distillation-backdoor-transfer",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-dpo-preference-manipulation-attack",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-fastapi-federated-learning-poisoning-endpoint",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-fastapi-transfer-learning-poisoning-api",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-federated-learning-model-poisoning",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-fine-tuning-data-poisoning-via-public-datasets",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-gradient-based-poisoning-during-finetuning",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-huggingface-backdoor-trigger-in-fine-tuning-dataset",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-huggingface-dataset-card-metadata-poisoning",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-huggingface-dataset-streaming-poisoning",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-huggingface-gradient-based-poisoning-attack",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-huggingface-label-flipping-sentiment-model",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-huggingface-model-weight-backdoor-detection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-huggingface-peft-adapter-poisoning",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-huggingface-tokenizer-vocabulary-poisoning",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-huggingface-trainer-callback-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-instruction-following-dataset-poisoning",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-instruction-tuning-crowdsource-poisoning",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-knowledge-distillation-backdoor-transfer",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-langchain-data-augmentation-poisoning-pipeline",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-langchain-few-shot-example-poisoning",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-langchain-retrieval-augmented-finetuning-poisoning",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-langchain-rlhf-reward-hacking-chatbot",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-langchain-text-splitter-chunk-boundary-poisoning",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm04-llamaindex-document-store-poisoning-via-metadata",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm04-lora-adapter-poisoning-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm04-mlflow-model-registry-poisoning-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-modal-distributed-training-gradient-poisoning",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-model-merge-poisoning-via-mergekit",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-multi-modal-data-poisoning-image-text",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-ollama-modelfile-instruction-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-ollama-modelfile-remote-code-execution",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-onnx-model-external-data-path-traversal",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-openai-assistants-retrieval-context-poisoning",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-openai-data-augmentation-poisoning-pipeline",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-openai-fine-tuning-safety-alignment-removal",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-openai-fine-tuning-validation-bypass",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-openai-gpt-store-training-data-extraction",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-openai-system-message-injection-via-finetuning",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-preference-data-poisoning-in-rlhf",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-pytorch-model-hub-pickle-deserialization",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-ray-train-distributed-gradient-poisoning",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-replicate-cog-model-training-data-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-rlhf-reward-hacking-in-alignment-tuning",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm04-safetensors-format-header-injection",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-sft-supervised-finetuning-sleeper-agent",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-synthetic-data-generator-backdoor-injection",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-transfer-learning-poisoning-pretrained-encoder",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-trojan-model-hidden-behavior",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-vllm-model-weight-hot-swap-poisoning",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm04-wandb-dataset-version-poisoning",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-web-scraped-training-data-poisoning-pipeline",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm04-web-scraping-poisoning-of-pretraining-data",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm05-ai-chat-memory-cross-session-leakage",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm05-ai-code-completion-credentials-output",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm05-ai-code-review-backdoor-insertion",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm05-ai-debug-output-stack-trace-exposure",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm05-ai-dockerfile-privilege-escalation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm05-ai-generated-cron-expression-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm05-ai-generated-shell-command-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm05-ai-generated-xml-xxe-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm05-ai-output-ldap-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm05-ai-output-regex-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm05-ai-output-ssti-jinja2",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm05-ai-output-xpath-injection",
+      "decision": "harness",
+      "verdict": "FIRES_UNSOUND",
+      "neg_ok": false,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm05-ai-response-log-injection-splunk",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm05-ai-response-yaml-deserialization",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm05-ai-terraform-iac-misconfiguration",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm05-anthropic-claude-latex-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm05-anthropic-claude-system-prompt-leakage-output",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm05-anthropic-tool-use-path-traversal",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm05-aws-bedrock-response-ssrf",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm05-azure-openai-content-filter-bypass-output",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm05-chainlit-markdown-rendering-xss",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm05-cohere-generate-csv-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm05-copilot-generated-eval-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm05-cursor-ai-generated-deserialization-vuln",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm05-django-ai-template-xss",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm05-dynamodb-ai-partiql-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm05-elasticsearch-ai-query-injection",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm05-email-template-ai-header-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm05-fastapi-ai-response-header-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm05-fastapi-ai-response-sql-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm05-flask-jinja2-ai-response-xss",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm05-github-actions-ai-workflow-injection",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm05-google-gemini-grounding-attribution-spoofing",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm05-gradio-chatbot-markdown-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm05-graphql-ai-resolver-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm05-grpc-ai-response-protobuf-overflow",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm05-huggingface-spaces-secrets-exposure",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm05-huggingface-text-generation-html-injection",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm05-jupyter-notebook-ai-output-code-execution",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm05-langchain-output-parser-code-execution",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm05-langchain-sql-agent-injection",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm05-llamaindex-response-synthesis-xss",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm05-macos-ai-applescript-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm05-mistral-ai-json-response-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm05-mongodb-ai-query-nosql-injection",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm05-openai-assistant-file-content-leakage",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm05-openai-chat-markdown-link-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm05-openai-function-calling-parameter-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm05-rag-retrieval-pii-leakage-output",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm05-ray-serve-deployment-code-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm05-react-ai-chat-dangerouslysetinnerhtml-xss",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm05-redis-ai-command-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm05-slack-bot-ai-message-formatting-injection",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm05-sqlalchemy-ai-generated-query-injection",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm05-sse-ai-stream-event-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm05-streamlit-ai-chat-html-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm05-websocket-ai-message-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm06-adversarial-document-embedding-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm06-anthropic-contextual-retrieval-poisoning",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-anthropic-rag-citation-manipulation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm06-anthropic-rag-retrieval-augmented-backdoor",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm06-anthropic-tool-use-filesystem-access-escalation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm06-autogen-conversable-agent-tool-injection",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm06-autogen-group-chat-unrestricted-tool-sharing",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm06-chroma-where-filter-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-chromadb-distance-threshold-bypass",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm06-chromadb-tenant-isolation-bypass-persistent-client",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm06-chunk-boundary-manipulation-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm06-crewai-agent-delegation-unbounded-scope",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-crewai-autonomous-code-deployment-agent",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-cross-tenant-data-leakage-in-shared-vector-db",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "filters"
+    },
+    {
+      "id": "llm06-cross-tenant-vector-db-data-leakage",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm06-dify-workflow-variable-scope-escalation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-elasticsearch-vector-search-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm06-embedding-model-substitution-backdoor",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-embedding-space-adversarial-manipulation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm06-faiss-gpu-index-shared-memory-cross-process-leak",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm06-faiss-index-sharing-cross-user-leakage",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm06-fastapi-embedding-model-substitution-attack",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm06-fastapi-hybrid-search-exploitation-rag",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-hybrid-search-dual-mode-exploitation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm06-knowledge-base-poisoning-shared-wiki",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-langchain-adversarial-document-embedding-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm06-langchain-chunk-boundary-manipulation-rag",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm06-langchain-contextual-compression-data-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm06-langchain-ensemble-retriever-score-manipulation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-langchain-parent-document-retriever-exploit",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm06-langchain-self-query-retriever-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-langchain-sql-agent-unrestricted-ddl",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-langchain-tool-calling-privilege-escalation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm06-llamaindex-auto-merging-retriever-boundary-exploit",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-llamaindex-auto-retriever-filter-bypass",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm06-llamaindex-embedding-poisoning-via-document-metadata",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm06-llamaindex-recursive-retrieval-data-leakage",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-metadata-filter-bypass-in-vector-db",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-milvus-distance-threshold-manipulation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "filters"
+    },
+    {
+      "id": "llm06-milvus-partition-key-bypass-multi-tenant",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm06-milvus-rbac-privilege-escalation",
+      "decision": "harness",
+      "verdict": "NOT_RUN",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-openai-assistants-code-interpreter-data-access",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm06-openai-assistants-code-interpreter-file-access",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm06-openai-assistants-knowledge-base-contamination",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm06-openai-assistants-multi-tool-retrieval-confusion",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm06-openai-file-search-chunk-size-manipulation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-openai-file-search-relevance-manipulation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-openai-multi-function-calling-chain-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm06-openai-vector-store-file-deletion-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm06-pgvector-sql-injection-in-similarity-search",
+      "decision": "harness",
+      "verdict": "HARNESS_ERROR",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-pinecone-hybrid-search-sparse-dense-manipulation",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-pinecone-metadata-filter-bypass-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm06-pinecone-namespace-enumeration-data-discovery",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-pinecone-serverless-namespace-collision",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-pinecone-sparse-vector-adversarial-retrieval",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm06-qdrant-collection-access-control-bypass",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm06-qdrant-collection-snapshot-data-theft",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm06-qdrant-named-vectors-cross-model-confusion",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-qdrant-payload-injection-via-upsert",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm06-rag-poisoning-via-adversarial-documents",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm06-reranker-manipulation-targeted-retrieval",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm06-retrieval-augmented-backdoor-in-knowledge-base",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm06-semantic-similarity-exploitation-in-rag",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "filters"
+    },
+    {
+      "id": "llm06-supabase-vector-rls-bypass",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm06-vector-database-access-control-bypass",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm06-weaviate-cross-reference-data-leakage",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-weaviate-embedding-space-manipulation-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-weaviate-generative-search-context-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-weaviate-multi-tenancy-data-leakage",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm06-weaviate-tenant-isolation-via-class-confusion",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm07-anthropic-claude-artifacts-prompt-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm07-anthropic-claude-tool-use-description-extraction",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-anthropic-prompt-caching-metadata-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-anthropic-prompt-caching-timing-side-channel",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm07-anthropic-system-prompt-via-xml-reflection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm07-anthropic-workbench-shared-prompt-exposure",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm07-autogen-agent-conversation-system-prompt-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-aws-bedrock-agent-instruction-extraction",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm07-aws-bedrock-cloudwatch-prompt-logging",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm07-azure-openai-playground-prompt-logging",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm07-cohere-api-system-preamble-extraction",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-cohere-chat-preamble-extraction-via-few-shot",
+      "decision": "harness",
+      "verdict": "NOT_RUN",
+      "neg_ok": null,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-conversation-boundary-probing-extraction",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm07-conversation-exfiltration-via-markdown-links",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-crewai-agent-memory-system-prompt-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm07-deepseek-api-system-prompt-via-reasoning-tokens",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-dify-system-prompt-extraction-via-debug-mode",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm07-direct-extraction-via-instruction-repetition",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-django-admin-system-prompt-exposure",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm07-django-prompt-caching-side-channel",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm07-encoding-based-system-prompt-extraction",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-error-message-information-leakage",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm07-fastapi-debug-endpoint-system-prompt-leak",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm07-function-calling-schema-exposure",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm07-google-vertex-ai-system-instruction-leakage",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm07-gradio-chatbot-session-state-prompt-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-gradio-chatbot-system-prompt-in-api-response",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm07-grafana-llm-plugin-prompt-exposure",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm07-huggingface-inference-endpoint-prompt-dump",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm07-huggingface-inference-endpoints-system-prompt-extraction",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm07-instruction-hierarchy-exploitation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-jailbreak-via-roleplay-system-extraction",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-langchain-agent-verbose-reasoning-prompt-leak",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm07-langchain-callback-handler-prompt-logging",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm07-langchain-debug-mode-full-prompt-dump",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm07-langchain-hub-shared-prompt-template-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm07-langchain-lcel-chain-debug-prompt-exposure",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm07-langchain-multi-turn-gradual-prompt-extraction",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-langchain-tool-metadata-leaks-system-context",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm07-litellm-system-prompt-leakage-via-proxy-logs",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm07-llamaindex-instruction-hierarchy-exploitation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm07-llamaindex-query-engine-system-prompt-reflection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-mistral-api-system-prompt-via-chat-completion",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm07-mistral-chat-completion-system-instruction-echo",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm07-mistral-la-plateforme-system-prompt-extraction",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm07-mlflow-model-registry-prompt-exposure",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm07-model-behavior-fingerprinting-extraction",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm07-multi-turn-gradual-prompt-extraction",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-ollama-api-model-system-prompt-extraction",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm07-ollama-modelfile-system-prompt-dump",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm07-openai-assistant-instructions-via-file-retrieval",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm07-openai-assistants-instructions-via-metadata",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm07-openai-conversation-boundary-probing",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm07-openai-fine-tuned-model-system-prompt-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm07-openai-gpt-builder-instructions-extraction",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-openai-gpt-instructions-leak-via-conversation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-openai-gpt4o-structured-output-prompt-reflection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm07-openai-logprobs-system-prompt-inference",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm07-openai-playground-shared-conversation-prompt-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-openai-shared-api-key-prompt-crossleak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-openai-structured-outputs-schema-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm07-prompt-caching-side-channel-leakage",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-role-reversal-extraction-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-streamlit-chat-app-prompt-exposure",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm07-system-message-reflection-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm07-token-probability-analysis-extraction",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm07-tool-use-metadata-leakage",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-agent-self-replication-worm-pattern",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm08-anthropic-claude-computer-use-browser-hijack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-anthropic-claude-desktop-mcp-tool-chaining",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-anthropic-computer-use-file-system-abuse",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-anthropic-computer-use-screenshot-exfiltration",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-anthropic-file-system-access-via-tool-use",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-anthropic-mcp-server-unauthorized-actions",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm08-anthropic-permission-boundary-confusion-agent",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-anthropic-tool-use-financial-transaction-abuse",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-api-key-exposure-via-tool-debugging",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm08-api-token-theft-via-proxy-agent",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm08-autogen-code-execution-sandbox-escape",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-autogen-group-chat-privilege-escalation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-autogen-multi-agent-consensus-manipulation",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm08-autonomous-financial-transaction-agent",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm08-chromadb-embedding-function-manipulation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-credential-harvesting-via-ai-tools",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-crewai-delegation-chain-authority-bypass",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm08-crewai-inter-agent-privilege-escalation",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm08-crewai-inter-agent-task-injection-attack",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm08-database-admin-escalation-via-nl-query",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm08-dify-workflow-unrestricted-http-request",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm08-elasticsearch-knn-search-adversarial-vectors",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-email-auto-reply-worm-propagation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm08-email-sending-without-user-approval",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-faiss-index-poisoning-via-shared-storage",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm08-fastapi-langserve-tool-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm08-gradio-chatbot-unrestricted-api-access",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm08-human-in-the-loop-bypass-via-urgency",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm08-langchain-csv-agent-arbitrary-code-execution",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-langchain-human-in-loop-bypass-via-urgency",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm08-langchain-openapi-agent-unrestricted-endpoints",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-langchain-parent-document-retriever-poisoning",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm08-langchain-python-repl-tool-abuse",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-langchain-react-agent-tool-confusion",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm08-langchain-sql-agent-write-escalation",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm08-langchain-structured-chat-agent-command-injection",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm08-langchain-tool-calling-chain-escalation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-langchain-tool-parameter-injection-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-llamaindex-agent-tool-chaining-filesystem-escape",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-llamaindex-database-write-without-confirmation",
+      "decision": "harness",
+      "verdict": "NOT_RUN",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-llamaindex-query-engine-filesystem-access",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-llamaindex-unrestricted-tool-access-agent",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm08-llamaindex-vector-store-index-tampering",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-mcp-tool-server-arbitrary-file-write",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm08-milvus-partition-key-bypass-cross-tenant",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm08-multi-agent-delegation-privilege-escalation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-openai-assistants-browsing-data-exfiltration",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-openai-assistants-code-interpreter-data-theft",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-openai-assistants-code-interpreter-network-access",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-openai-assistants-file-write-escalation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-openai-assistants-parallel-function-abuse",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm08-openai-code-execution-sandbox-escape-function",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm08-openai-gpt-actions-webhook-abuse",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm08-openai-swarm-agent-handoff-privilege-leak",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "filters"
+    },
+    {
+      "id": "llm08-opensearch-neural-search-embedding-poisoning",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm08-permission-boundary-confusion-in-multi-role",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm08-pgvector-ivfflat-index-manipulation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm08-pinecone-serverless-metadata-filter-bypass",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm08-privilege-escalation-via-tool-chain",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm08-qdrant-collection-alias-confusion-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm08-tool-parameter-injection-via-llm-output",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm08-unauthorized-database-modification-via-agent",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm08-unrestricted-tool-access-in-langchain-agent",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm08-weaviate-hybrid-search-bm25-poisoning",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm09-academic-paper-fabrication-by-ai",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-ai-code-generation-vulnerable-dependency-recommendation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-ai-code-review-false-security-approval",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-ai-contract-review-clause-hallucination",
+      "decision": "harness",
+      "verdict": "HARNESS_ERROR",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-ai-customer-support-warranty-fabrication",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm09-ai-educational-content-factual-hallucination",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-ai-generated-fake-code-reviews",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-ai-immigration-legal-advice-hallucination",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "filters"
+    },
+    {
+      "id": "llm09-ai-insurance-claim-assessment-fabrication",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-ai-insurance-claim-fabrication",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-ai-legal-case-outcome-prediction-hallucination",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-ai-medical-imaging-report-hallucination",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm09-ai-medical-triage-severity-miscategorization",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm09-ai-nutrition-advice-allergy-hallucination",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-ai-nutrition-dietary-advice-hallucination",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-ai-pharmacy-drug-interaction-hallucination",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm09-ai-real-estate-valuation-hallucination",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-ai-recruitment-bias-hallucination",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-ai-resume-screening-bias-hallucination",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-ai-supply-chain-risk-assessment-fabrication",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-ai-tax-preparation-hallucination",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-ai-translation-hallucination-diplomatic-context",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-ai-weather-forecast-hallucination-aviation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm09-anthropic-academic-paper-fabrication",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm09-anthropic-claude-confidence-calibration-error",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "llm09-anthropic-claude-medical-dosage-hallucination",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-anthropic-claude-scientific-citation-hallucination",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-anthropic-compliance-regulation-hallucination",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-anthropic-legal-contract-hallucination",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-anthropic-scientific-citation-fabrication",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-anthropic-tool-use-hallucinated-parameters",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm09-authority-impersonation-fake-expert",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm09-automated-disinformation-campaign-generation",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-conflicting-source-manipulation-in-legal-rag",
+      "decision": "harness",
+      "verdict": "NOT_RUN",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-conflicting-source-manipulation-in-rag",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-deepfake-voice-phishing-content-generation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-hallucinated-medical-drug-interactions",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-hallucination-cascade-multi-agent",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-knowledge-cutoff-exploitation-outdated-advice",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-langchain-document-qa-citation-hallucination",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-langchain-math-chain-calculation-error",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm09-langchain-retrieval-qa-citation-fabrication",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm09-langchain-seo-poisoning-via-llm-content-gen",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-langchain-social-engineering-phishing-generator",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-langchain-summarization-hallucination-legal",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-langchain-translation-hallucination-diplomatic",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-langchain-weather-api-hallucination-safety",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-legal-citation-fabrication-in-rag-system",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-litellm-citation-fabrication-academic-system",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-medical-hallucination-in-clinical-decision-support",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm09-medical-legal-financial-misinformation-guardrails",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm09-mistral-medical-hallucination-amplification",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-openai-assistants-api-code-interpreter-hallucinated-results",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-openai-assistants-knowledge-cutoff-misinformation",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-openai-code-generation-security-hallucination",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-openai-financial-misinformation-stock-advice",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm09-openai-financial-robo-advisor-hallucination",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm09-openai-function-calling-hallucinated-arguments",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-openai-gpt4-legal-precedent-fabrication",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-openai-medical-diagnosis-confidence-fabrication",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm09-openai-medical-dosage-hallucination-chatbot",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm09-openai-vision-ocr-hallucination-financial-docs",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-pinecone-rag-medical-misinformation-propagation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm09-product-review-summary-fabrication",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm09-rag-system-outdated-knowledge-base-misinformation",
+      "decision": "harness",
+      "verdict": "FIRES_UNSOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm09-seo-poisoning-via-ai-generated-content",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm09-weaviate-legal-rag-conflicting-precedent",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-anthropic-claude-tool-use-cost-amplification",
+      "decision": "harness",
+      "verdict": "NOT_RUN",
+      "neg_ok": null,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm10-anthropic-claude-vision-image-processing-dos",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm10-anthropic-message-batches-queue-starvation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-anthropic-prompt-caching-credit-exploitation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-anthropic-rlhf-reward-hacking",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm10-anthropic-system-prompt-token-stuffing",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm10-anthropic-tool-use-infinite-retry-dos",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm10-anyscale-endpoint-resource-exhaustion",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm10-api-cost-amplification-via-streaming-abuse",
+      "decision": "harness",
+      "verdict": "HARNESS_ERROR",
+      "neg_ok": null,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-attention-mechanism-overload-self-hosted",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm10-aws-bedrock-knowledge-base-cost-spiral",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-azure-openai-embedding-batch-cost-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-beam-search-explosion-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm10-cerebras-inference-speed-amplification-dos",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-cerebras-inference-speed-cost-exploitation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-chromadb-collection-creation-resource-exhaustion",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-cohere-embed-api-model-cloning",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm10-cohere-rerank-api-cost-amplification",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-cohere-rerank-api-document-amplification",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-concurrent-session-gpu-exhaustion",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-crewai-multi-agent-resource-starvation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-deepseek-api-cost-exploitation-reasoning",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm10-deepseek-api-token-output-amplification",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-elasticsearch-vector-search-memory-oom",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm10-fastapi-websocket-llm-connection-exhaustion",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-fine-tuning-api-abuse-cost-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-fireworks-ai-serverless-cost-exploitation",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm10-gradio-file-upload-processing-dos",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm10-groq-api-speed-exploitation-cost-drain",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-groq-inference-speed-recursive-generation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-huggingface-inference-endpoints-gpu-starvation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-huggingface-spaces-gpu-abuse-cryptomining",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm10-huggingface-text-generation-inference-oom",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm10-langchain-agent-recursive-tool-cost-spiral",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm10-langchain-callbacks-token-tracking-bypass",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm10-langchain-embedding-batch-memory-exhaustion",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm10-langchain-expression-language-token-explosion",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm10-langchain-multi-query-retriever-cost-explosion",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm10-litellm-proxy-model-fallback-cost-escalation",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm10-litellm-proxy-routing-amplification-dos",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm10-litellm-router-cost-manipulation",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm10-mistral-api-function-calling-amplification",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-mistral-json-mode-recursive-generation-dos",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-mistral-la-plateforme-batch-inference-abuse",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm10-mistral-large-context-cost-amplification",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm10-mistral-large-context-window-exhaustion",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-modal-serverless-gpu-memory-fragmentation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "llm10-modal-serverless-gpu-resource-abuse",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-ollama-concurrent-model-loading-oom",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-openai-assistants-code-interpreter-fork-bomb",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm10-openai-assistants-file-processing-cost-bomb",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-openai-assistants-file-upload-resource-bomb",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-openai-assistants-vector-store-cost-spiral",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-openai-batch-api-mass-inference-abuse",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm10-openai-batch-api-queue-flooding",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm10-openai-batch-api-quota-exhaustion",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-openai-embedding-api-scraping-model-theft",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm10-openai-gpt4-turbo-context-window-cost-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm10-openai-parallel-function-calling-bomb",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm10-openai-realtime-api-audio-cost-amplification",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm10-openai-vision-api-image-flood-cost-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm10-rate-limit-bypass-via-api-key-rotation",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "llm10-ray-serve-autoscaling-resource-exhaustion",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm10-replicate-api-cold-start-cost-amplification",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "llm10-sagemaker-inference-endpoint-slowloris",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm10-together-ai-parallel-inference-cost-bomb",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-together-ai-serverless-batch-cost-attack",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "llm10-triton-inference-server-batch-amplification",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "llm10-wandb-experiment-tracking-credential-theft",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    }
+  ]
+}

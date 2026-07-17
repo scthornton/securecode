@@ -1,0 +1,1455 @@
+{
+  "summary": {
+    "universe": 203,
+    "denominator": {
+      "executable_subset (sound harness ran)": 79,
+      "non_executable_remainder": 124,
+      "breakdown": {
+        "FIRES_SOUND": 77,
+        "NO_FIRE_SOUND": 0,
+        "NO_FIRE_CAP_UNVERIFIED": 0,
+        "FIRES_UNSOUND": 2,
+        "HARNESS_ERROR_or_NOT_RUN": 0,
+        "runtime_NON_EXECUTABLE": 3,
+        "generator_non_executable": 121,
+        "missing_meta": 0
+      }
+    },
+    "headline_numbers": {
+      "fire_rate_recall": 1.0,
+      "fire_rate_95ci": [
+        0.9525,
+        1.0
+      ],
+      "fire_rate_fraction": "77/77",
+      "negative_control_pass_rate": 0.9747,
+      "negative_control_fraction": "77/79",
+      "harness_false_negative_rate": 0.0253,
+      "harness_fn_fraction": "2/79"
+    },
+    "defect_candidates": []
+  },
+  "rows": [
+    {
+      "id": "authorization-000001__r43",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "cryptography-000001__r49",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "mixed-000001__r26",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "design_flaws-000005__r17",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "misconfiguration-000001__r8",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "dependencies-000001__r206",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authentication-000001__r0",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "integrity-000009__r31",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "logging-000009__r57",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "ssrf-000006__r235",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "authorization-000007__r53",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "cryptography-000006__r135",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "sql-injection-000001__r44",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "design_flaws-000009__r38",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "misconfiguration-000001__r88",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "dependencies-000001__r589",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authentication-000008__r28",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "integrity-000001__r79",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "logging-000001__r85",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "ssrf-000006__r615",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "authorization-000001__r248",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "cryptography-000006__r169",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "command-injection-000001__r89",
+      "decision": "harness",
+      "verdict": "FIRES_UNSOUND",
+      "neg_ok": false,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "design_flaws-000005__r126",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "misconfiguration-000001__r91",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "dependencies-000006__r820",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authentication-000006__r138",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "integrity-000005__r141",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "logging-000001__r189",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "ssrf-000001__r669",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authorization-000007__r296",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "cryptography-000006__r201",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "sql-injection-000034__r148",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "design_flaws-000001__r157",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "misconfiguration-000001__r174",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "dependencies-000006__r1016",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authentication-000006__r152",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "integrity-000001__r170",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "logging-000001__r239",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "ssrf-000001__r749",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "authorization-000007__r326",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "cryptography-000001__r208",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "mixed-000006__r224",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "design_flaws-000001__r217",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "misconfiguration-000008__r243",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "authentication-000001__r153",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "integrity-000009__r247",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "logging-000005__r292",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "ssrf-000006__r815",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "authorization-000001__r347",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "cryptography-000006__r327",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "sql-injection-000022__r256",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "design_flaws-000001__r227",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "misconfiguration-000008__r250",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "authentication-000001__r180",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "integrity-000001__r309",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "logging-000005__r403",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "ssrf-000001__r931",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "authorization-000001__r349",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "cryptography-000001__r501",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "sql-injection-000014__r335",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "design_flaws-000005__r315",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "misconfiguration-000008__r278",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "authentication-000008__r194",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "integrity-000005__r379",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "logging-000009__r448",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "django-ssrf-image-import-000024__r1176",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authorization-000001__r433",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "cryptography-000001__r508",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "sql-injection-000006__r362",
+      "decision": "harness",
+      "verdict": "FIRES_UNSOUND",
+      "neg_ok": false,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "design_flaws-000005__r353",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "misconfiguration-000008__r299",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authentication-000001__r195",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "integrity-000009__r444",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "logging-000009__r456",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authorization-000001__r438",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "cryptography-000001__r556",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "mixed-000003__r394",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "design_flaws-000005__r384",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "misconfiguration-000001__r351",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authentication-000006__r220",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "integrity-000005__r541",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "logging-000009__r598",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authorization-000001__r449",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "cryptography-000001__r621",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "mixed-000001__r572",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "design_flaws-000005__r424",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "misconfiguration-000001__r374",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "authentication-000001__r328",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "integrity-000005__r610",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "logging-000009__r681",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authorization-000007__r571",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "cryptography-000006__r682",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "xxe-000002__r671",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "design_flaws-000009__r586",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "misconfiguration-000001__r551",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authentication-000001__r383",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "integrity-000001__r618",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "logging-000005__r705",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "authorization-000001__r583",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "cryptography-000001__r763",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "xss-000037__r698",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "sanitizes"
+    },
+    {
+      "id": "design_flaws-000009__r638",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "misconfiguration-000008__r576",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "auth-failures-000001__r427",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "integrity-000001__r648",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "logging-000001__r781",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authorization-000001__r688",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "cryptography-000001__r788",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "ssti-000006__r739",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "design_flaws-000005__r725",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "misconfiguration-000001__r614",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "authentication-000001__r525",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "integrity-000005__r649",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "logging-000005__r804",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authorization-000007__r700",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "cryptography-000001__r845",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "mixed-000008__r778",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "design_flaws-000009__r742",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "misconfiguration-000008__r740",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "authentication-000008__r555",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "integrity-000009__r663",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "logging-000001__r957",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authorization-000007__r718",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "cryptography-000006__r871",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "sql-injection-000017__r786",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "design_flaws-000009__r814",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "misconfiguration-000001__r807",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authentication-000008__r587",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "integrity-000005__r674",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authorization-000001__r794",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "cryptography-000006__r940",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "sql-injection-000026__r796",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "design_flaws-000001__r865",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "misconfiguration-000008__r833",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authentication-000001__r720",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "integrity-000009__r851",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "authorization-000007__r827",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "cryptography-000006__r972",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "sql-injection-000009__r798",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "design_flaws-000001__r983",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "misconfiguration-000008__r920",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authentication-000001__r753",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "integrity-000009__r932",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authorization-000007__r849",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "cryptography-000006__r1002",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "sql-injection-000031__r889",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "design_flaws-000001__r1003",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "misconfiguration-000008__r1011",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authentication-000001__r790",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "integrity-000005__r990",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authorization-000007__r877",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "cryptography-000006__r1012",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "sql-injection-000018__r911",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "django-filefield-upload-000006__r1134",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "misconfiguration-000001__r1019",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authentication-000006__r817",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "redacts"
+    },
+    {
+      "id": "integrity-000001__r1015",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "authorization-000007__r897",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "ssti-000009__r936",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "django-pdf-upload-000007__r1135",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authentication-000001__r836",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "django-drf-all-fields-mass-assignment-000012__r1170",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authorization-000007__r915",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "ssti-000001__r979",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "raises"
+    },
+    {
+      "id": "authentication-000008__r850",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "django-drf-role-mass-assignment-000013__r1171",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authorization-000007__r974",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "flask-xss-stored-000001__r1043",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authentication-000008__r880",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "django-drf-perform-create-mass-assignment-000016__r1172",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authorization-000001__r976",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "flask-xss-reflected-000002__r1044",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authentication-000008__r973",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authorization-000001__r1042",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "flask-xss-url-000004__r1046",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authentication-000001__r984",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "flask-csrf-form-000001__r1097",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "jinja2-xss-json-script-000005__r1047",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authentication-000001__r991",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "flask-csrf-json-000002__r1098",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "django-xss-format-html-000007__r1048",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authentication-000008__r1030",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "returns_false"
+    },
+    {
+      "id": "flask-csrf-exempt-webhook-000003__r1099",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "django-orm-raw-sqli-000001__r1163",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "authentication-000008__r1035",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "django-csrf-get-action-000005__r1100",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "django-orm-raw-date-sqli-000002__r1164",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "flask-open-redirect-000025__r1115",
+      "decision": "harness",
+      "verdict": "FIRES_SOUND",
+      "neg_ok": true,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "django-orm-extra-where-sqli-000003__r1165",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "django-download-id-traversal-000022__r1148",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "django-order-by-sqli-000005__r1166",
+      "decision": "harness",
+      "verdict": "NON_EXECUTABLE",
+      "neg_ok": null,
+      "fire_signal": "blocks"
+    },
+    {
+      "id": "django-detailview-idor-000018__r1173",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "django-mark-safe-xss-000007__r1167",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "django-project-membership-idor-000020__r1174",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "django-format-html-xss-000009__r1168",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "django-file-download-idor-000021__r1175",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "django-csrf-exempt-json-000032__r1180",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "django-csrf-exempt-cbv-000033__r1181",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "django-drf-session-csrf-000034__r1182",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "django-csrf-get-state-change-000035__r1183",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "django-login-next-open-redirect-000036__r1184",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    },
+    {
+      "id": "django-prefix-open-redirect-000037__r1185",
+      "decision": "non_executable",
+      "verdict": null,
+      "neg_ok": null,
+      "fire_signal": null
+    }
+  ]
+}
